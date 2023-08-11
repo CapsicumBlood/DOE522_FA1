@@ -64,6 +64,8 @@ jobs:
 
     - name: Deploy to staging environment
       run: npm run deploy
+    - name: Run tests (intentional failure)
+      run: non_existent_command
 
   # Add a failure notification step
   notify_failure:
